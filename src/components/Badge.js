@@ -4,6 +4,29 @@ import Badgeform from './Badgeform';
 import logoconf from '../images/logoconf.png';
 import './styles/badge.css';
 class Badge extends React.Component {
+    state ={
+        form:{
+            firstName:'',
+            lastName:'',
+            jobTittle:'',
+            email:'',
+            twitter:'',
+
+        }
+    };
+    handleChange = (e)=>{
+        
+        /* const nextForm  = this.state.form;
+        nextForm[e.target.name]=e.target.value; */
+
+        this.setState({
+            form:{
+                ...this.state.form,
+                [e.target.name]:e.target.value
+            }
+        })
+        console.log(this.state);
+    }
     render() {
         return (
             <div className="container">
@@ -25,7 +48,7 @@ class Badge extends React.Component {
                     #Platziconf
                 </div>
             </div>
-                <Badgeform/>
+                <Badgeform  onChange={this.handleChange}  formValues={this.state.form}/>
             </div>
             </div>
         )
