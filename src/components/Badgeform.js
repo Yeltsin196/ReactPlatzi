@@ -43,7 +43,7 @@ class Badgeform extends React.Component{
                     <label htmlFor="">Email</label>
                     <input onChange={this.props.onChange}
                     value={this.props.formValues.email}
-                     className="form-control" type="email" name="Email"/>
+                     className="form-control" type="email" name="email"/>
                </div>
                <div className="form-group">
                     <label htmlFor="">Job Tittle</label>

@@ -37,11 +37,11 @@ class Badge extends React.Component {
                 </div>
                 <div className="badge_section-name">
                 <img className="badge-avatar" src={this.props.avatar} alt="imagen-avatar" />
-                    <h1>{this.props.firstName} <br />{this.props.lastName}</h1>
+                    <h1>{this.state.form.firstName} <br />{this.state.form.lastName}</h1>
                 </div>
                 <div className="badge_section-info">
-                      <h3>{this.props.jobTittle}</h3>
-                    <div>{this.props.twitter} </div>
+                      <h3>{this.state.form.jobTittle}</h3>
+                    <div>{this.state.form.twitter} </div>
                     
                 </div>
                 <div className="badge-footer">
