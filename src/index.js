@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Badge from './components/Badge';
-
+import Badges from './components/Badges';
+import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import './global.css';
+
 /*import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -22,9 +24,10 @@ ReactDOM.render(
 /* serviceWorker.unregister(); */
 
 const container = document.getElementById('root');
-ReactDOM.render(<Badge firstName="Yeltsin" lastName="Ramirez"
+/* ReactDOM.render(<Badge firstName="Yeltsin" lastName="Ramirez"
  jobTittle="Web Enginner"
  avatar="https://www.gravatar.com/avatar?d=identicon"
- twitter="@yeez196" />, container);
+ twitter="@yeez196" />, container); */
+ ReactDOM.render(<Badges/>,container);
 /* 
  ReactDOM.render(<Badgeform/>,container); */

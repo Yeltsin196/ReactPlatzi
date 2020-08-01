@@ -1,7 +1,7 @@
 import React from 'react';
 /* import ReactDOM from 'react-dom'; */
 import Badgeform from './Badgeform';
-import logoconf from '../images/logoconf.png';
+import logoconf from '../images/badge-header.svg';
 import './styles/badge.css';
 class Badge extends React.Component {
     state ={
