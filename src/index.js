@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Badge from './components/Badge';
 import Badges from './components/Badges';
 import Navbar from './components/Navbar';
+import App from './components/App';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import './global.css';
@@ -28,6 +29,6 @@ const container = document.getElementById('root');
  jobTittle="Web Enginner"
  avatar="https://www.gravatar.com/avatar?d=identicon"
  twitter="@yeez196" />, container); */
- ReactDOM.render(<Badges/>,container);
+ ReactDOM.render(<App/>,container);
 /* 
  ReactDOM.render(<Badgeform/>,container); */
