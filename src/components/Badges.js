@@ -4,6 +4,7 @@ import './styles/Badges.css';
 import confLogo from '../images/badge-header.svg';
 import api from '../api';
 import BadgeList from '../components/BadgeList';
+import MiniLoader from '../components/Miniloader'
 
 class Badges extends React.Component {
     state={
@@ -32,9 +33,13 @@ class Badges extends React.Component {
 */ 
     componentDidMount(){
         this.fetchData()
+        this.intervalId =setInterval(this.fetchData,5000);
        
     }
-
+    
+    componentWillMount(){
+        clearInterval( this.intervalId); //frenar el intervalo para ir a otra pagina
+    }
     fetchData = async() =>{
         this.setState({
             loading:true,error:null,
@@ -81,7 +86,7 @@ class Badges extends React.Component {
     }
 
     render() {
-        if (this.state.loading === true) {
+        if (this.state.loading === true && !this.state.data) {
             return 'Loading...';
           }
      
@@ -106,7 +111,7 @@ class Badges extends React.Component {
                     <ul className="list-unstyled">
                          <BadgeList badges={this.state.data}/> 
 
-                        
+                        {this.state.loading && <MiniLoader/>}
                     </ul>
                     </div>
                 </div>
