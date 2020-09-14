@@ -35,11 +35,11 @@ class Badge extends React.Component {
                     <img src={logoconf} alt="header-img"/>
                 </div>
                 <div className="badge_section-name">
-                <img className="badge-avatar" src={this.props.avatar} alt="imagen-avatar" />
+                <img className="badge-avatar" src={this.props.avatarUrl} alt="imagen-avatar" />
                     <h1>{this.props.firstName} <br />{this.props.lastName}</h1>
                 </div>
                 <div className="badge_section-info">
-                      <h3>{this.props.jobTittle}</h3>
+                      <h3>{this.props.jobTitle}</h3>
                     <div>{this.props.twitter} </div>
                     
                 </div>

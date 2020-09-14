@@ -2,21 +2,20 @@ import React from 'react';
 
 class Badgeform extends React.Component {
   handleClick = e => {
-    console.log('Button was clicked');
+  /*   console.log('Button was clicked'); */
   };
 
   handleSubmit = e => {
     e.preventDefault();
-    console.log('Form was submitted');
-    console.log(this.state);
+   /*  console.log('Form was submitted'); */
+  
   };
 
   render() {
     return (
       <div>
-        <h1>New Attendant</h1>
 
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.props.onSubmit}>
           <div className="form-group">
             <label>First Name</label>
             <input

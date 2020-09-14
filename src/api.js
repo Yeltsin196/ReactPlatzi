@@ -33,10 +33,10 @@ const api = {
       });
     },
     read(badgeId) {
-      return callApi(`/badges/${badgeId}`);
+      return callApi(`/users/${badgeId}`);
     },
     update(badgeId, updates) {
-      return callApi(`/badges/${badgeId}`, {
+      return callApi(`/users/${badgeId}`, {
         method: 'PUT',
         body: JSON.stringify(updates),
       });
