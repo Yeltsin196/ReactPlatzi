@@ -4,6 +4,10 @@ import Badgeform from './Badgeform';
 import logoconf from '../images/badge-header.svg';
 import './styles/badge.css';
 class Badge extends React.Component {
+
+    componentDidMount(){
+        
+    }
     /* state ={
         form:{
             firstName:'',

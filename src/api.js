@@ -27,7 +27,7 @@ const api = {
       return callApi('/users');
     },
     create(badge) {
-      return callApi(`/badges`, {
+      return callApi(`/`, {
         method: 'POST',
         body: JSON.stringify(badge),
       });
