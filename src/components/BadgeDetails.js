@@ -6,6 +6,7 @@ import PageLoading from './PageLoading';
 import api from '../api';
 import Badge from  './Badge';
 import { Link } from "react-router-dom";
+import ReactDOM from 'react-dom';
 
 function BadgeDetails(props){
     const badge= props.badge;
@@ -39,7 +40,8 @@ function BadgeDetails(props){
                             </Link>
                         </div>
                         <div>
-                           <button className="btn btn-danger">Delete</button>
+                           <button   className="btn btn-danger">Delete</button>
+                           {ReactDOM.createPortal(<h1>Hola</h1>,document.getElementById('modal'))}
                         </div>
                     </div>
                 </div>
