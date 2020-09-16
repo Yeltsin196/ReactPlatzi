@@ -43,7 +43,7 @@ const api = {
     },
     // Lo hubiera llamado `delete`, pero `delete` es un keyword en JavaScript asi que no es buena idea :P
     remove(badgeId) {
-      return callApi(`/badges/${badgeId}`, {
+      return callApi(`/users/${badgeId}`, {
         method: 'DELETE',
       });
     },
